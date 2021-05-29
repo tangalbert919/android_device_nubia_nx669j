@@ -40,8 +40,8 @@ $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-RFS_MDM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/adsp/
-$(RFS_MDM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+RFS_MSM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/adsp/
+$(RFS_MSM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM ADSP folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
@@ -52,8 +52,8 @@ $(RFS_MDM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-RFS_MDM_CDSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/cdsp/
-$(RFS_MDM_CDSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+RFS_MSM_CDSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/cdsp/
+$(RFS_MSM_CDSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM CDSP folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
@@ -64,8 +64,8 @@ $(RFS_MDM_CDSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-RFS_MDM_MPSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/mpss/
-$(RFS_MDM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+RFS_MSM_MPSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/mpss/
+$(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM MPSS folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
@@ -76,8 +76,8 @@ $(RFS_MDM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-RFS_MDM_SLPI_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/slpi/
-$(RFS_MDM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+RFS_MSM_SLPI_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/slpi/
+$(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM SLPI folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
@@ -88,8 +88,8 @@ $(RFS_MDM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-RFS_MDM_TN_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/tn/
-$(RFS_MDM_TN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+RFS_MSM_TN_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/tn/
+$(RFS_MSM_TN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM SLPI folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
@@ -100,7 +100,7 @@ $(RFS_MDM_TN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MDM_ADSP_SYMLINKS) $(RFS_MDM_CDSP_SYMLINKS) $(RFS_MDM_MPSS_SYMLINKS) $(RFS_MDM_SLPI_SYMLINKS) $(RFS_MDM_TN_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(RFS_MSM_TN_SYMLINKS)
 
 WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
 $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
