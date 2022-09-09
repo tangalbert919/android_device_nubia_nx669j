@@ -148,7 +148,7 @@ PRODUCT_PACKAGES += \
 
 # fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd.NX669J
+    fastbootd
 
 # Fingerprint
 PRODUCT_PACKAGES += \
