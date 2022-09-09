@@ -17,10 +17,10 @@
 
 set -e
 
-DEVICE=NX659J
+DEVICE=NX669J
 VENDOR=nubia
 
-INITIAL_COPYRIGHT_YEAR=2020
+INITIAL_COPYRIGHT_YEAR=2021
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-impl.NX659J"
+#define LOG_TAG "android.hardware.light@2.0-impl.NX669J"
 
 #include "Light.h"
 

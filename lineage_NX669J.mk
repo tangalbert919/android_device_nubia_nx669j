@@ -21,17 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from NX659J device
+# Inherit from NX669J device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := nubia
-PRODUCT_DEVICE := NX659J
+PRODUCT_DEVICE := NX669J
 PRODUCT_MANUFACTURER := nubia
-PRODUCT_NAME := lineage_NX659J
-PRODUCT_MODEL := NX659J
+PRODUCT_NAME := lineage_NX669J
+PRODUCT_MODEL := NX669J
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=NX659J \
-    PRIVATE_BUILD_DESC="nubia/NX659J/NX659J:10/QKQ1.200127.002/nubia.20200609.185057:user/release-keys"
+    PRODUCT_NAME=NX669J \
+    PRIVATE_BUILD_DESC="nubia/NX669J/NX669J:11/RKQ1.210614.002/nubia.20220823.200159:user/release-keys"
 
-BUILD_FINGERPRINT := nubia/NX659J/NX659J:10/QKQ1.200127.002/nubia.20200609.185057:user/release-keys
+BUILD_FINGERPRINT := nubia/NX669J/NX669J:11/RKQ1.210614.002/nubia.20220823.200159:user/release-keys

@@ -24,18 +24,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/nubia/NX659J/NX659J-vendor.mk)
+$(call inherit-product, vendor/nubia/NX669J/NX669J-vendor.mk)
 
 # Inherit display makefiles
-$(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-board.mk)
+$(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-board.mk)
 
 -include $(LOCAL_PATH)/properties.mk
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_TARGET_VNDK_VERSION := 30
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl \
-    gralloc.kona \
+    gralloc.lahaina \
     libdisplayconfig \
     libdisplayconfig.vendor \
     libqdMetaData \
@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     libsdedrm \
     libsdmcore \
     libsdmutils \
-    memtrack.kona \
+    memtrack.lahaina \
     vendor.display.config@1.15.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@3.0.vendor \
@@ -148,12 +148,12 @@ PRODUCT_PACKAGES += \
 
 # fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd.NX659J
+    fastbootd.NX669J
 
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.NX659J
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.NX669J
 
 # Fstab
 PRODUCT_COPY_FILES += \
@@ -185,7 +185,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.NX659J
+    android.hardware.light@2.0-service.NX669J
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -223,7 +223,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/nubia/NX659J
+    device/nubia/NX669J
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -346,7 +346,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service.NX659J
+    android.hardware.sensors@1.0-service.NX669J
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -368,7 +368,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
-    thermal.kona
+    thermal.lahaina
 
 # Trustzone
 PRODUCT_PACKAGES += \
@@ -381,7 +381,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.NX659J
+    android.hardware.vibrator@1.0-service.NX669J
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
