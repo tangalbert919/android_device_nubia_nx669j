@@ -63,8 +63,8 @@ function blob_fixup() {
     case "${1}" in
 
     # Change soname for fingerprint.default.so
-    vendor/lib/hw/fingerprint.kona.so | vendor/lib64/hw/fingerprint.kona.so)
-        patchelf --set-soname "fingerprint.kona.so" "${2}"
+    vendor/lib/hw/fingerprint.lahaina.so | vendor/lib64/hw/fingerprint.lahaina.so)
+        patchelf --set-soname "fingerprint.lahaina.so" "${2}"
         ;;
     esac
 }
