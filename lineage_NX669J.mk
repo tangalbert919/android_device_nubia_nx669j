@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,6 +32,6 @@ PRODUCT_MODEL := NX669J
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=NX669J \
-    PRIVATE_BUILD_DESC="nubia/NX669J/NX669J:11/RKQ1.210614.002/nubia.20220823.200159:user/release-keys"
+    PRIVATE_BUILD_DESC="NX669J-EEA-user 12 SKQ1.220502.001 eng.nubia.20230315.170232 release-keys"
 
-BUILD_FINGERPRINT := nubia/NX669J/NX669J:11/RKQ1.210614.002/nubia.20220823.200159:user/release-keys
+BUILD_FINGERPRINT := nubia/NX669J-EEA/NX669J-EEA:12/SKQ1.220502.001/eng.nubia.20230315.170232:user/release-keys

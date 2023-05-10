@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2021 The LineageOS Project
+# Copyright (C) 2020-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -158,7 +158,7 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_DENSITY := 420
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-07-01
+VENDOR_SECURITY_PATCH := 2023-02-01
 
 # Sepolicy
 -include device/qcom/sepolicy/sepolicy.mk
