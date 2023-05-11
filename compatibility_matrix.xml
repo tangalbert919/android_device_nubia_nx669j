@@ -1,4 +1,8 @@
-<compatibility-matrix version="1.0" type="device">
+<!--
+    Input:
+        compatibility_matrix.xml
+-->
+<compatibility-matrix version="2.0" type="device">
     <hal format="hidl" optional="false">
         <name>android.frameworks.schedulerservice</name>
         <version>1.0</version>
@@ -56,6 +60,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.qccsyshal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IQccsyshal</name>
+            <instance>qccsyshal</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.sigma_miracast</name>
         <version>1.0</version>
         <interface>
@@ -71,10 +83,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <vendor-ndk>
-        <version>29</version>
-    </vendor-ndk>
-    <system-sdk>
-        <version>29</version>
-    </system-sdk>
 </compatibility-matrix>
