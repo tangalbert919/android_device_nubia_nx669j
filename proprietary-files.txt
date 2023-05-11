@@ -853,6 +853,9 @@ vendor/lib64/libsdm-colormgr-algo.so
 -vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 
+# Display calibration data
+vendor/etc/qdcm_calib_data_dsi_nt37800a_1080_2400_amoled_command_cphy_b6_panel.xml
+vendor/etc/qdcm_calib_data_dsi_nt37800a_1080_2400_amoled_command_cphy_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
