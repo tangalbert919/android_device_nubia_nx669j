@@ -359,18 +359,8 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
-    init.mdm.sh \
     init.nfc.sku.sh \
-    init.qcom.class_core.sh \
-    init.qcom.crashdata.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
     init.msm.usb.configfs.rc \
     init.nubia.rc \
     init.qcom.rc \

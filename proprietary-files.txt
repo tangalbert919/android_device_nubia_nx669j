@@ -365,6 +365,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
@@ -1114,6 +1115,25 @@ vendor/lib64/librcc.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
+
+# Init
+vendor/bin/init.class_main.sh
+vendor/bin/init.mdm.sh
+vendor/bin/init.nubia.post_boot.sh
+vendor/bin/init.qcom.class_core.sh
+vendor/bin/init.qcom.crashdata.sh
+vendor/bin/init.qcom.early_boot.sh
+vendor/bin/init.qcom.post_boot.sh
+vendor/bin/init.qcom.sdio.sh
+vendor/bin/init.qcom.sensors.sh
+vendor/bin/init.qcom.sh
+
+# Kernel
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.kernel.post_boot-lahaina.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/vendor_modprobe.sh
+vendor/etc/init/hw/init.qti.kernel.rc
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
