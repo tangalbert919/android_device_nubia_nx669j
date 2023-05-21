@@ -27,6 +27,12 @@
 #
 
 on boot
+	# Haptics
+    chown system audio /dev/aw8695_haptic
+    chmod 0660 /dev/aw8695_haptic
+    chown system audio /sys/class/leds/vibrator_aw8695/haptic_audio
+    chmod 0660 /sys/class/leds/vibrator_aw8695/haptic_audio
+
 	# LCD
 	chown system system /sys/kernel/lcd_enhance/cabc
     chown system system /sys/kernel/lcd_enhance/lcd_reg
@@ -167,6 +173,9 @@ on boot
 	rm /data/vendor/tp2/gesture_enable
 
 on post-fs-data
+	# Audio (DTS)
+	mkdir /data/vendor/audio/dts 0771 media audio
+
 	# Battery
 	chmod 664 /sys/class/qcom-battery/battery_type
 	chmod 664 /sys/class/qcom-battery/float_capacity
@@ -177,6 +186,16 @@ on post-fs-data
 	chown system system /sys/class/qcom-battery/battery_type
 	chown system system /sys/class/qcom-battery/float_capacity
 	chown system system /sys/class/qcom-battery/charger_vdm
+
+	# Camera
+    chown cameraserver cameraserver /sys/kernel/camera/file_dump
+    chown cameraserver cameraserver /sys/kernel/camera/torch_switch
+    chown cameraserver cameraserver /sys/kernel/camera/ois_switch
+    chown cameraserver cameraserver /sys/kernel/camera/eeprom_calibration
+    chmod 0666 /sys/kernel/camera/file_dump
+    chmod 0666 /sys/kernel/camera/torch_switch
+    chmod 0666 /sys/kernel/camera/ois_switch
+    chmod 0666 /sys/kernel/camera/eeprom_calibration
 
 	# Fan
 	chown system system /sys/kernel/fan/fan_current
