@@ -435,3 +435,32 @@ on post-fs-data
 	chmod 0666 /persist/sensors/rgb_color_cfg
 	chown system system /persist/sensors/rgbc_cfg
 	chmod 0666 /persist/sensors/rgbc_cfg
+
+# USB compositions
+on property:sys.usb.config=rndis,none && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFCA
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFCB
+
+on property:sys.usb.config=adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFC1
+
+on property:sys.usb.config=mtp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFCE
+
+on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFCF
+
+on property:sys.usb.config=ptp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFD0
+
+on property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x19D2
+    write /config/usb_gadget/g1/idProduct 0xFFD1
